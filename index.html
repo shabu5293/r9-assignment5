@@ -5,8 +5,192 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate Bangladesh</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                // clifford: '#da373d',
+                primary: 'rgb(180, 244, 97);',
+                secondary: '#F9F7F3',
+                accent: 'rgba(17, 17, 17, 0.7);',
+                accent2: 'rgb(17, 17, 17);',
+                secondBg: '#ffffff94;',
+      
+              },
+              backgroundImage: {
+                              'bg-image': "url('assets/bg.jpg')",
+             },
+            }
+          }
+        }
+      </script>
 </head>
 <body>
+
+    <header class=" h-72 sm:h-80 sticky top-0 bg-opacity-50 backdrop-blur-md bg-white z-50">
+        <div class="w-full bg-secondary ">
+            <nav  class="container mx-auto flex justify-between items-center font-[Lexend] pt-5 pb-16 sm:pl-0 pl-2 sm:pr-0 pr-2
+            
+            ">
+                <div>
+                    <button id="blog-btn" class="btn bg-primary  sm:text-2xl font-semibold">Blog</button>
+                </div>
+                <div class="flex justify-center items-center gap-2  ">
+                    <img class=" hidden sm:block w-12" src="assets/logo.png" alt="">
+                    <h3 class="text-3xl font-semibold hidden sm:block ">Donate Bangladesh</h3>
+                </div>
+                <div>
+                    <div class="p-4 flex items-center gap-2">
+                        <img src="assets/coin.png" alt="">
+                      <div class="text-xl"> <span id="total-balance">
+                        5000 
+                      </span> BDT </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+         <!-- banner-section start here  -->
+         <div class="mt-14 sm:mt-20 mb-10">
+            <div class="flex  gap-8 justify-center font-[Lexend]">
+               <div>
+                <button id="donate-btn" class="btn w-40 h-16 rounded-xl text-accent border border-3 border-gray-300 text-[20px]  text-white font-semibold bg-primary">Donation</button>
+               </div>
+               
+               <div>
+                <button id="history-btn" class="btn w-40 h-16 rounded-xl text-accent  border border-3 border-gray-300 text-[20px]  text-white font-semibold bg-primary">History</button>
+               </div>
+            </div>
+         </div>
+        <!-- banner-section ends here  -->
+    </header>
+
+
+    <main>
+        <!-- donate-section start here -->
+        <section id="donate-section" class=" container mx-auto mb-16 ">
+            <!-- card-1 -->
+            <div class="grid lg:grid-cols-2 md:gric-cols-1 gap-10  p-8 border border-gray-300 rounded-3xl mt-8">
+                <div class="">
+                    <img  class="w-full h-full" src="assets/noakhali.png" alt="">
+                </div>
+                <div class="space-y-5">
+                    <div class=" text-center  sm:text-left">
+                        <!-- add money number -->
+                         <div class="stats shadow">
+                            <div class="p-4 flex items-center gap-2 bg-gray-200">
+                                <img src="assets/coin.png" alt="">
+                              <div  class="text-2xl font-bold"> <span id="donate-balance">5000</span> BDT </div>
+                            </div>
+                          </div>
+    
+                         <h3 class=" text-accent2 font-bold text-[20px] sm:text-[30px] mt-6 ">Donate for Flood at Noakhali, Bangladesh</h3>
+                         <p class="text-accent text-[17px] sm:text-[20px] mt-6 mb-10 lg:mb-16 text-justify"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster.Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                     </div>
+                     <div>
+                         <input id="input-add-money" class=" w-full h-[60px] rounded-xl p-4 border border-gray-200  outline-gray-300" placeholder="Write Donation Amount " type="text ">
+                     </div>
+                     <div class="mt-20">
+    
+                         <button id="donate-now-btn" class=" btn w-full h-[60px] rounded-xl text-accent bg-primary text-[20px] font-semibold 
+                         
+                         ">
+                            
+                          Donate Now
+                        </button>
+                     </div> 
+                </div>
+            </div>
+             <!-- card-2 -->
+             <div class="grid lg:grid-cols-2 md:gric-cols-1 gap-10  p-8 border border-gray-300 rounded-3xl mt-8">
+              <div class="">
+                  <img  class="w-full h-full " src="assets/feni.png" alt="">
+              </div>
+              <div class="space-y-5">
+                  <div class=" text-center  sm:text-left">
+                      <!-- add money number -->
+                       <div class="stats shadow">
+                          <div class="p-4 flex items-center gap-2 bg-gray-200">
+                              <img src="assets/coin.png" alt="">
+                            <div  class="text-2xl font-bold"> <span id="donate-balance">5000</span> BDT </div>
+                          </div>
+                        </div>
+    
+                       <h3 class=" text-accent2 font-bold text-[20px] sm:text-[30px] mt-6 ">Donate for Flood at Noakhali, Bangladesh</h3>
+                       <p class="text-accent text-[17px] sm:text-[20px] mt-6 mb-10 lg:mb-16 text-justify"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster.Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need</p>
+                   </div>
+                   <div>
+                       <input id="input-add-money" class=" w-full h-[60px] rounded-xl p-4 border border-gray-200  outline-gray-300" placeholder="Write Donation Amount " type="text ">
+    
+                   </div>
+                   <div class="mt-20">
+                       <button id="donate-now-btn" class=" btn w-full h-[60px] rounded-xl text-accent bg-primary text-[20px] font-semibold ">
+                          
+                        Donate Now
+                      </button>
+                   </div> 
+              </div>
+          </div>
+             <!-- card-3 -->
+             <div class="grid lg:grid-cols-2 md:gric-cols-1 gap-10  p-8 border border-gray-300 rounded-3xl mt-8">
+              <div class="">
+                  <img  class="w-full h-full" src="assets/quota-protest.png" alt="">
+              </div>
+              <div class="space-y-5">
+                  <div class=" text-center  sm:text-left">
+                      <!-- add money number -->
+                       <div class="stats shadow">
+                          <div class="p-4 flex items-center gap-2 bg-gray-200">
+                              <img src="assets/coin.png" alt="">
+                            <div  class="text-2xl font-bold"> <span id="donate-balance">5000</span> BDT </div>
+                          </div>
+                        </div>
+    
+                       <h3 class=" text-accent2 font-bold text-[20px] sm:text-[30px] mt-6 ">Donate for Flood at Noakhali, Bangladesh</h3>
+                       <p class="text-accent text-[17px] sm:text-[20px] mt-6 mb-10 lg:mb-16 text-justify"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster.Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                   </div>
+                   <div>
+                       <input id="input-add-money" class=" w-full h-[60px] rounded-xl p-4 border border-gray-200  outline-gray-300" placeholder="Write Donation Amount " type="text ">
+                   </div>
+                   <div class="mt-20">
+                       <button id="donate-now-btn" class=" btn w-full h-[60px] rounded-xl text-accent bg-primary text-[20px] font-semibold ">
+                          
+                        Donate Now
+                      </button>
+                   </div> 
+              </div>
+          </div>     
+            
+        </section>
+        <!-- donate-section ends here -->
+    
+    
+        <!-- transaction history start here -->
+        <section id="history-section" class="hidden">
+         <div class="container mx-auto  mt-10 mb-20 border  border-gray-200 p-10 card ">
+             <div class="">
+               <div class="card-title flex-col space-y-5" id="transaction-container">
+                
+               </div>
+             </div>
+           </div>  
+        </section>
+        <!-- transaction history ends here -->
+            
+    </main>
+
+
+    <script src="js/utilities.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/features.js"></script>
     
 </body>
 </html>
